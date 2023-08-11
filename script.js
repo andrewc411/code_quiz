@@ -18,6 +18,7 @@ var buttonB = document.getElementById("b");
 var buttonC = document.getElementById("c");
 var buttonD = document.getElementById("d");
 
+
 var quizQuestions = [{
     question: "What types of values can be given to a variable?",
     choiceA: "Strings",
@@ -27,7 +28,7 @@ var quizQuestions = [{
     correctAnswer: "d"},
   {
     question: "What does DOM stand for?",
-    choiceA: "Dreary Old Men",
+    choiceA: "Dominant Orbital Measurement",
     choiceB: "Digitally Organized Model",
     choiceC: "Deconstruct Origin Methods",
     choiceD: "Document Object Model",
@@ -81,12 +82,26 @@ var quizQuestions = [{
     choiceC: "Arrays, Functions, and Loops",
     choiceD: "Head, Body, and Forms",
     correctAnswer: "d"},
-        
+    {
+    question: "Which of the following are JavaScript methods?",
+    choiceA: "concat",
+    choiceB: "push",
+    choiceC: "this",
+    choiceD: "all of the above",
+    correctAnswer: "d"},
+    {
+    question: "What does API stand for?",
+    choiceA: "Applied Process Implementation",
+    choiceB: "Animate Point Intersection",
+    choiceC: "Application Programming Interface",
+    choiceD: "Applied Programming Interaction",
+    correctAnswer: "c",
+    }
     ];
 
 var finalQuestionIndex = quizQuestions.length;
 var currentQuestionIndex = 0;
-var timeLeft = 60;
+var timeLeft = 90;
 var timerInterval;
 var score = 0;
 var correct;
@@ -198,7 +213,7 @@ function replayQuiz(){
     highscoreContainer.style.display = "none";
     gameoverDiv.style.display = "none";
     startQuizDiv.style.display = "flex";
-    timeLeft = 60;
+    timeLeft = 90;
     score = 0;
     currentQuestionIndex = 0;
 }
